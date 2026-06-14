@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aanu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cinematic Page Curtain -->
+    <div id="page-curtain">
+        <div class="curtain-content">
+            <h2 class="GreatVibes">For Aanu...</h2>
+            <div class="curtain-loader"></div>
+        </div>
+    </div>
+
+    <!-- Ambient Floating Particles -->
+    <div id="ambient-particles"></div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="assets/Amma-I-love-you.mp3" type="audio/mp3">
+    </audio>
+    <button id="music-toggle" class="music-btn magnetic" title="Play Music">
+        <i class="fa-solid fa-play"></i> <span class="music-text">Play Music</span>
+    </button>
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="assets/Snapchat-2073865399.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Floating petals across the hero -->
+        <div class="hero-petals" aria-hidden="true">
+            <span>🌸</span><span>✨</span><span>🌸</span><span>💕</span>
+            <span>🌸</span><span>✨</span><span>🌸</span><span>💕</span>
+            <span>🌸</span><span>💛</span><span>✨</span><span>🌸</span>
+        </div>
+
+        <!-- Glowing ambient ring (decorative) -->
+        <div class="hero-ring" aria-hidden="true"></div>
+
+        <div class="glass-card entrance-card">
+            <!-- Sparkles Container -->
+            <div id="sparkles" class="sparkles-container"></div>
+
+            <!-- Top embellishment -->
+            <div class="hero-top-badge">
+                <span class="hero-crown">👑</span>
+            </div>
+
+            <!-- Tagline -->
+            <p class="hero-eyebrow">✦ Today, the world celebrates ✦</p>
+
+            <h1 class="princess-title">HAPPY<br>BIRTHDAY</h1>
+            <h2 class="name-highlight">Aanu</h2>
+
+            <!-- Sweet sub-tagline -->
+            <p class="hero-tagline">
+                You are a gift to this world — beautiful, rare, and irreplaceable. 💙
+            </p>
+
+            <!-- Rose row -->
+            <div class="hero-roses">
+                <span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span>
+            </div>
+
+            <!-- Scroll invite -->
+            <div class="hero-scroll-hint">
+                <span class="scroll-text">Scroll to explore your world</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3D Photo Carousel Section -->
+    <section id="photo-carousel">
+        <h2 class="princess-title" style="margin-bottom: 2rem; padding-top: 4rem; text-align: center;">MEMORIES</h2>
+        <p class="subtitle fade pink-subtitle" style="text-align: center; margin-bottom: 4rem;">Drag to spin the
+            carousel!
+        </p>
+        <div class="scene">
+            <div class="carousel" id="drag-carousel">
+                <div class="carousel-cell"><img src="assets/aanu.jpg" alt="Img 1"></div>
+                <div class="carousel-cell"><img src="assets/Snapchat-1479416969.jpg" alt="Img 2"></div>
+                <div class="carousel-cell"><img src="assets/Snapchat-1814347615.jpg" alt="Img 3"></div>
+                <div class="carousel-cell"><img src="assets/Snapchat-716832220.jpg" alt="Img 4"></div>
+                <div class="carousel-cell"><img src="assets/IMG-20250727-WA0085.jpg" alt="Img 5"></div>
+                <div class="carousel-cell"><img src="assets/Snapchat-263425026.jpg" alt="Img 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="bg-video-section">
+                <source src="assets/Snapchat-1228592889.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <h2 class="section-title">A Journey of Beautiful Moments</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item reveal left">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/Snapchat-186808817.jpg" alt="Memory 1">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>A Radiant Smile</h3>
+                        <p>Your smile lights up every room. Here's to many more moments of pure joy and laughter.</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item reveal right">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/Snapchat-1687147876.jpg" alt="Memory 2">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Grace and Elegance</h3>
+                        <p>Always carrying yourself with such royal grace. You inspire everyone around you!</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item reveal left">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/Snapchat-981472180.jpg" alt="Memory 3">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Unforgettable Adventures</h3>
+                        <p>Every moment spent together is a treasure. Sending love on your special day.</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item reveal right">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/Snapchat-318370519.jpg" alt="Memory 4">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Stunning &amp; Beautiful</h3>
+                        <p>Here's wishing you endless happiness and success in the coming year.</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item reveal left">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/IMG-20260611-WA0228.jpg" alt="Memory 5">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Cherished Memories</h3>
+                        <p>May your day be as amazing as you are. Keep shining bright!</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 6 (Video) -->
+            <div class="timeline-item reveal right">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <video src="assets/Snapchat-1845492728.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="timeline-text">
+                        <h3>A Royal Celebration</h3>
+                        <p>A beautiful highlight of elegance and regal grace that shines all night long.</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item 7 -->
+            <div class="timeline-item reveal left">
+                <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="assets/IMG-20260611-WA0223.jpg" alt="Vibrant Energy">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Vibrant Energy</h3>
+                        <p>Living life to the fullest with unmatched joy, capturing the true spirit of celebration.</p>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+          
+        </div>
+    </section>
+
+
+
+
+    <!-- Voice Notes Section -->
+    <section id="wish-wall">
+        <div class="video-container">
+            <img src="assets/Snapchat-1687147876.jpg">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Floating hearts background -->
+        <div class="floating-hearts" aria-hidden="true">
+            <span>💕</span><span>💙</span><span>✨</span><span>🎀</span>
+            <span>💕</span><span>🌸</span><span>💙</span><span>✨</span>
+            <span>🎀</span><span>💕</span>
+        </div>
+
+        <div class="wishes-header reveal">
+            <p class="wishes-eyebrow">🎧 Tap a card to listen</p>
+            <h2 class="wishes-title">Wishes From Friends</h2>
+            <p class="wishes-sub">Your crew recorded something special just for you 🎀</p>
+        </div>
+
+        <div class="voice-notes-grid reveal">
+
+            <!-- Friend Wish 1 - Esther -->
+            <div class="vn-card" onclick="toggleVoiceNote('vn1', this)">
+                <audio id="vn1" src="assets/esther.ogg"></audio>
+                <div class="vn-avatar">🌸</div>
+                <div class="vn-info">
+                    <span class="vn-name">Esther</span>
+                    <span class="vn-tagline">A sweet message from her heart 💌</span>
+                    <div class="vn-play-row">
+                        <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="vn-wave">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="visualizer-container"><canvas class="vn-canvas"></canvas></div>
+                </div>
+                <div class="vn-shimmer"></div>
+            </div>
+
+            <!-- Friend Wish 2 - Bethel -->
+            <div class="vn-card" onclick="toggleVoiceNote('vn2', this)">
+                <audio id="vn2" src="assets/bethel.ogg"></audio>
+                <div class="vn-avatar">🎀</div>
+                <div class="vn-info">
+                    <span class="vn-name">Bethel</span>
+                    <span class="vn-tagline">Sending all the love your way 💕</span>
+                    <div class="vn-play-row">
+                        <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="vn-wave">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="visualizer-container"><canvas class="vn-canvas"></canvas></div>
+                </div>
+                <div class="vn-shimmer"></div>
+            </div>
+
+            <!-- Friend Wish 3 - Favour -->
+            <div class="vn-card" onclick="toggleVoiceNote('vn3', this)">
+                <audio id="vn3" src="assets/favour.ogg"></audio>
+                <div class="vn-avatar">✨</div>
+                <div class="vn-info">
+                    <span class="vn-name">Favour</span>
+                    <span class="vn-tagline">Favour's sparkling birthday blessing ✨</span>
+                    <div class="vn-play-row">
+                        <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="vn-wave">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="visualizer-container"><canvas class="vn-canvas"></canvas></div>
+                </div>
+                <div class="vn-shimmer"></div>
+            </div>
+
+            <!-- Friend Wish 4 - Paradise -->
+            <div class="vn-card" onclick="toggleVoiceNote('vn4', this)">
+                <audio id="vn4" src="assets/paradise.ogg"></audio>
+                <div class="vn-avatar">🍭</div>
+                <div class="vn-info">
+                    <span class="vn-name">Paradise</span>
+                    <span class="vn-tagline">Sweet words from Paradise 🌈</span>
+                    <div class="vn-play-row">
+                        <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="vn-wave">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="visualizer-container"><canvas class="vn-canvas"></canvas></div>
+                </div>
+                <div class="vn-shimmer"></div>
+            </div>
+
+            <!-- Friend Wish 5 - Shindara -->
+            <div class="vn-card" onclick="toggleVoiceNote('vn5', this)">
+                <audio id="vn5" src="assets/shindara.ogg"></audio>
+                <div class="vn-avatar">🦋</div>
+                <div class="vn-info">
+                    <span class="vn-name">Shindara</span>
+                    <span class="vn-tagline">A butterfly kiss just for you 🦋</span>
+                    <div class="vn-play-row">
+                        <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="vn-wave">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="visualizer-container"><canvas class="vn-canvas"></canvas></div>
+                </div>
+                <div class="vn-shimmer"></div>
+            </div>
+
+        </div>
+
+   
+    </section>
+
+
+  
+
+  
+    
+
+
+    <!-- Interactive Cake Section -->
+    <section id="cake-section">
+        <div id="gift-box" class="gift-container reveal">
+            <h2 class="princess-title smallcake-title">A GIFT FOR YOU</h2>
+            <div class="box">
+                <div class="box-lid">
+                    <div class="bow"></div>
+                </div>
+                <div class="box-body"></div>
+            </div>
+            <p class="subtitle fade tap-to-open">TAP TO OPEN</p>
+        </div>
+
+        <div class="cake-container glass-card hidden" id="cake-content">
+            <!-- Balloons Container -->
+            <div class="balloons-container">
+                <div class="balloon b1"></div>
+                <div class="balloon b2"></div>
+                <div class="balloon b3"></div>
+                <div class="balloon b4"></div>
+                <div class="balloon b5"></div>
+            </div>
+
+            <h2 class="princess-title smallcake-title">MAKE A WISH!</h2>
+            <p class="subtitle fade cake-subtitle">BLOW INTO YOUR MICROPHONE TO BLOW OUT THE CANDLES</p>
+
+            <div class="cake flat-cake">
+                <div class="plate flat-plate"></div>
+                <!-- Bottom Tier -->
+                <div class="tier flat-tier tier-bottom">
+                    <div class="drip flex-drip">
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                    </div>
+                </div>
+                <!-- Middle Tier -->
+                <div class="tier flat-tier tier-middle">
+                    <div class="drip flex-drip">
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                    </div>
+                </div>
+                <!-- Top Tier -->
+                <div class="tier flat-tier tier-top">
+                    <div class="drip flex-drip">
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                    </div>
+                </div>
+
+                <!-- Candles -->
+                <div class="candles">
+                    <div class="candle c1">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle c2">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle c3">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mic-controls">
+                <button id="start-mic-btn" class="enter-btn outline-pink magnetic"><i class="fa-solid fa-microphone"></i> ENABLE
+                    MIC TO BLOW</button>
+            </div>
+
+            <div id="celebration-msg" class="hidden">
+                <h2 class="GreatVibes">Happy Birthday!</h2>
+                <p>May your year be filled with magic! ✨</p>
+            </div>
+        </div>
+    </section>
+<!-- Footer Section -->
+ <footer class="luxury-footer">
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+     
+
+        <p class="footer-copy">
+            © 2026 • Crafted by EmmDevX • Happy Birthday Aanu ✨
+        </p>
+    </div>
+</footer>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
